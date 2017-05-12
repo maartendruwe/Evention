@@ -9,10 +9,10 @@ var options = {
     method: 'POST',
     url: 'https://api.ciscospark.com/v1/memberships',
     headers: {
-        authorization: 'Bearer NjY2MGQzNzEtZWM2Yy00NzU4LTkxODgtOGZjYWQzMzNiOWI4NjE0NDY3OWUtNWQy',
+        authorization: 'Bearer OTc4YTljMGEtZjMyMy00N2M0LWE5N2UtYzQ2MWQwMDVkNjE3N2MyNzhiM2YtMzVl',
         'content-type': 'application/x-www-form-urlencoded' },
     form: {
-        roomId: 'Y2lzY29zcGFyazovL3VzL1JPT00vOGM4NGIwNTAtMzNkYi0xMWU3LTljNjMtMmJkZDA0NjhiMzg5',
+        roomId: 'Y2lzY29zcGFyazovL3VzL1JPT00vMjk4MDZkZTAtYzZiZC0xMWU2LWFhZTctMzU1MDJhNDFiNDg1',
         personEmail: '' }
 };
 
@@ -26,7 +26,7 @@ module.exports = function(passport) {
     passport.use(new CiscoSparkStrategy({
         clientID: CISCO_SPARK_CLIENT_ID,
         clientSecret: CISCO_SPARK_CLIENT_SECRET,
-        callbackURL: "http://52.29.30.212:3000/auth/spark/callback",
+        callbackURL: "http://52.29.30.212:8080/auth/spark/callback",
         scope: [
             'spark:people_read'
         ]
@@ -73,7 +73,7 @@ scope: [
                     accessToken: accessToken,
                     refreshToken: refreshToken,
                     provider: 'spark',
-                    //now in the future searching on User.findOne({'facebook.id': profile.id } will match because of this next line
+                    //now in the future searching on User.findOne({'spark.id': profile.id } will match because of this next line
                     spark: profile._json
                 });
                 user.save(function(err) {

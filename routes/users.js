@@ -5,17 +5,14 @@ var User = require('../model/db');
 
 var request = require('request');
 
-var CISCO_SPARK_CLIENT_ID = "Ca4771d8a91e4ae2eff4b0cb50a4a1035ee3cc1fcaf17d9de07d3c935602332b5";
-var CISCO_SPARK_CLIENT_SECRET = "6dce449db5cea22fe91d38ad72f2972d7f3d4a9eecc3a457267da8b679b234d1";
-
 var options = {
     method: 'POST',
     url: 'https://api.ciscospark.com/v1/memberships',
     headers: {
-        authorization: 'Bearer NjY2MGQzNzEtZWM2Yy00NzU4LTkxODgtOGZjYWQzMzNiOWI4NjE0NDY3OWUtNWQy',
+        authorization: 'Bearer OTc4YTljMGEtZjMyMy00N2M0LWE5N2UtYzQ2MWQwMDVkNjE3N2MyNzhiM2YtMzVl',
         'content-type': 'application/x-www-form-urlencoded' },
     form: {
-        roomId: 'Y2lzY29zcGFyazovL3VzL1JPT00vOGM4NGIwNTAtMzNkYi0xMWU3LTljNjMtMmJkZDA0NjhiMzg5',
+        roomId: 'Y2lzY29zcGFyazovL3VzL1JPT00vMjk4MDZkZTAtYzZiZC0xMWU2LWFhZTctMzU1MDJhNDFiNDg1',
         personEmail: '' }
 };
 

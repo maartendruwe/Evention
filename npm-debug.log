@@ -7,7 +7,7 @@
 6 silly lifecycle splash@0.0.0~prestart: no script for prestart, continuing
 7 info lifecycle splash@0.0.0~start: splash@0.0.0
 8 verbose lifecycle splash@0.0.0~start: unsafe-perm in lifecycle true
-9 verbose lifecycle splash@0.0.0~start: PATH: /usr/lib/node_modules/npm/bin/node-gyp-bin:/home/ec2-user/merakisplash/node_modules/.bin:/usr/local/sbin:/sbin:/bin:/usr/sbin:/usr/bin:/opt/aws/bin:/root/bin:/opt/aws/bin:/root/bin
+9 verbose lifecycle splash@0.0.0~start: PATH: /usr/lib/node_modules/npm/bin/node-gyp-bin:/home/ec2-user/merakisplash/node_modules/.bin:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/opt/aws/bin:/home/ec2-user/.local/bin:/home/ec2-user/bin
 10 verbose lifecycle splash@0.0.0~start: CWD: /home/ec2-user/merakisplash
 11 silly lifecycle splash@0.0.0~start: Args: [ '-c', 'node ./bin/www' ]
 12 silly lifecycle splash@0.0.0~start: Returned: code: 1  signal: null
