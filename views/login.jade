@@ -1,0 +1,63 @@
+extends layout
+
+block content
+    body(class='aui content')
+        header(class='header')
+            div(class='header-bar container')
+                a(class='header-bar__logo')
+                    span(class='icon-cisco')
+                div(class='header-bar__main')
+                    div(class='header-heading')
+                        h1(class='page-title') GVE Programmability Contest 2017
+
+        div(class='hero hero--blue')
+            div(class='container')
+                div(class='hero__content')
+                    h1 Join our Cisco Spark Group and connect to WiFi!
+                    div(class='row')
+                        p(class='col-md-5') Get access to our Cisco Spark Group and to WiFi at the same time. Login now via your Cisco Spark account!
+
+
+                div(class='hero__toolbar')
+                    button(class='btn btn--white pull-left')#btnLogin Spark login
+
+        
+        div(class='hero hero--dkgray')
+            div(class='container')
+                div(class='hero__content')
+                    h1 Don't have a Cisco Spark account yet?
+                    div(class='row')
+                        p(class='col-md-6') We'll send you an invite to join Cisco Spark and our event group. You'll also get WiFi access, of course.
+                    fieldset#emailForm
+                        div(class='row')
+                            p(class='col-md-5') Please enter your name and email address
+                        div(class='row')
+                            div(class='col-md-6')
+                                form
+                                    div(class='form-group')
+                                        div(class='form-group__text')
+                                            input(id='inputName' type='text' class='input--dirty input--valid')
+                                            label(for='inputName')
+                                                Text Name
+                                    div(class='help-block text-danger')#nameWarning
+                                        span(class='icon-error')
+                                        span
+                                            t Invalid name
+                                    div(class='form-group')
+                                        div(class='form-group__text')
+                                            input(id='inputEmail' type='email' class='input--dirty input--valid')
+                                            label(for='inputEmail')
+                                                Text Email
+                                    div(class='help-block text-danger')#emailWarning
+                                        span(class='icon-error')
+                                        span
+                                            t Invalid email
+                div(class='hero__toolbar')#divAddEmail
+                    button(class='btn btn--white pull-left')#btnAddEmail Submit info
+                            
+                div(class='hero__toolbar')
+                    button(class='btn btn--white pull-left')#btnLocalLogin Submit info
+                        
+                        
+                    
+
